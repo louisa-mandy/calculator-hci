@@ -1,0 +1,42 @@
+<html>
+
+    <head> 
+        <link rel="stylesheet" type="text/css" href="calcu.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+
+    <body class="body">
+
+        
+
+        <f1 class="title"><b>Dynamic Calculator Price </b></f1>
+        
+        <div id="calculator">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Enter quantity" />
+
+            <label for="unit-price">Unit Price:</label>
+            <input type="number" id="unit-price" placeholder="Enter unit price" />
+
+            <button onclick="calculateTotal()">Calculate Total</button>
+
+            <div id="total">Total: $0.00</div>
+        </div>
+
+        <script>
+            function calculateTotal() {
+            var quantity = $('#quantity').val();
+            var unitPrice = $('#unit-price').val();
+
+            // Ensure both inputs are filled
+            if (quantity && unitPrice) {
+                var total = quantity * unitPrice;
+                $('#total').text('Total: $' + total.toFixed(2));
+            } else {
+                alert('Please enter both quantity and unit price.');
+            }
+            }
+        </script>
+
+    </body>
+</html>

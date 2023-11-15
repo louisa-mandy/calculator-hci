@@ -1,0 +1,24 @@
+.title{
+    font-size: 100%;
+    word-break: break-all;
+    padding-left: auto;
+    padding-left: auto;
+    color: #64483E ;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 100px;
+    background-color: white;
+    
+
+}
+
+.body{
+    background-color:#FFEDE6 ;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #64483E ;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+}
